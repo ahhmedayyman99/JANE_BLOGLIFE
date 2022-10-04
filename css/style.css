@@ -1,0 +1,443 @@
+/* Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Oswald", "Segoe UI", "Arial", "sans-serif";
+    background: #f1f1f1;
+    position: relative;
+}
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    z-index: 222;
+}
+nav i {
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    padding: 12px 17px;
+}
+nav a:last-child {
+    float: right;
+}
+nav a i:hover {
+    background: #555;
+}
+/* Header */
+.container {
+    max-width: 100%;
+    text-align: center;
+}
+header {
+    background-color: #fff;
+    padding-top: 48px;
+    padding-bottom: 65px;
+    letter-spacing: 1px;
+}
+header h1 {
+    padding-top: 40px;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0px;
+}
+header span {
+    padding-bottom: 60px;
+    background-color: #000;
+    color: #fff;
+    padding: 0px 8px;
+}
+/* img Header */
+.img-bg {
+    margin-bottom: 30px;
+    color: #fff;
+}
+.img-bg {
+    background-image: url(../image/jane.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.img-bg .button {
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-align: left;
+}
+.img-bg h1 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.img-bg p {
+    font-size: 64px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin: 30px 0px;
+}
+.img-bg button {
+    padding: 12px 24px;
+    opacity: 0.6;
+    font-size: 18px;
+    background-color: #eee;
+}
+.img-bg button:hover {
+    background: #fff;
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* Media */
+@media screen and (max-width: 767px) {
+    .img-bg p {
+        display: none;
+    }
+    .img-bg .button {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        text-align: left;
+    }
+}
+/* Article */
+.post {
+    box-sizing: border-box;
+    max-width: 66.66666%;
+    float: left;
+    padding-right: 20px;
+    margin-left: -20px;
+}
+.post .info {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+.post .info h3 {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 24px;
+}
+.post .info h5 {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+.post .info h5 span {
+    opacity: 0.60;
+}
+.post .info img {
+    width: 100%;
+    padding: 16px 0;
+}
+.post .info article span {
+    font-weight: bolder;
+}
+.post .info article {
+    font-family: "Open Sans";
+    font-size: 15px;
+    text-align: justify;
+    margin: 20px 0;
+}
+.like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.like:hover {
+   background-color: #ccc;
+}
+.replies {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.replies span {
+    background-color: #fff;
+    color: #000;
+    padding: 0 10px;
+}
+.replies:hover {
+    background-color: #eee;
+    color: #000;
+}
+.lire {
+    padding-bottom: 30px;
+}
+.post .info .george img {
+    width: 90px; 
+    margin-right: 100px;
+}
+.post .info .george {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.post .info .george {
+    border-top: 1px solid #afafaf;
+    margin-top: 50px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.post .info .george .content {
+    margin: 10px 0;
+}
+.content p {
+    font-size: 20px;
+    font-weight: 400px;
+    margin: 10px 0;
+}
+.content p span {
+    font-size: 15px;
+    opacity: 0.60;
+}
+.content .Great {
+    text-align: justify;
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* Media */
+@media screen and (max-width: 767px) {
+    .post {
+        box-sizing: border-box;
+        max-width: 100%;
+        display: block;
+        padding-right: 10px;
+        margin-left: -20px;
+    }
+    .lire {
+        padding-bottom: 50px;
+    }
+}
+/* Aside */
+aside {
+    float: right;
+    box-sizing: border-box;
+    max-width: 33.33334%;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+aside section {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+aside section:last-child {
+    margin-bottom: 0;
+}
+aside section .two-side {
+    background: #000;
+    padding: 10px 20px;
+    color: #fff;
+}
+/* Media */
+@media screen and (max-width: 767px) {
+    aside {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+}
+/* First Side */
+aside section img {
+    width: 100%;
+    display: block
+}
+aside section .first-side {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+aside section .first-side h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+aside section .first-side p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Open Sans";
+}
+/* Popular */
+.two-side {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+aside section .popular {
+    padding: 15px;
+    background: #fff;
+}
+aside section .popular .popular-h {
+    font-size: 18px;
+}
+aside section .popular .content {
+    box-sizing: border-box;
+    text-align: left;
+    font-family: "Open Sans";
+}
+aside section .popular .content span {
+    font-size: 18px;
+}
+aside section .popular .content p {
+    font-size: 15px;
+}
+aside section .popular .rep-two {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding: 10px 0;
+}
+aside section .popular .rep-two:last-child {
+    border-bottom: none
+}
+aside section .popular .rep-two:hover {
+    background: #ccc;
+}
+aside section .popular .rep-two img {
+    width: 50px;
+    margin-right: 15px;
+    display: block;
+    float: left;
+} 
+/* Advertise - tags - Follow-me - Subscribe */
+aside section .Advertise,
+.tags,
+.Follow-Me,
+.Subscribe
+ {
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: "Open Sans";
+}
+/* Advertise */
+aside section .Advertise div {
+    background: #F1F1F1;
+    padding: 75px;
+}
+aside section .Advertise div p {
+    font-size: 15px;
+    font-family: "Open Sans";
+}
+/* Tags */
+aside section .tags {
+    text-align: left;
+    color: #000;
+}
+.item1 {
+    background-color: #000;
+    color: #fff;
+    padding: 2px;
+    line-height: 3;
+    font-size: 15px;
+}
+.item2 {
+    background-color: #f1f1f1;
+    padding: 2px;
+    line-height: 3;
+    font-size: 12px;
+}
+.tags span {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+/* Inspiration */
+aside section .inspiration {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+}
+aside section .popular .Inspiration {
+    width: 46%;
+    margin: 6px;
+}
+/* Follow Me */
+.Follow-Me,
+.Subscribe {
+    text-align: left
+}
+aside section .Follow-Me i {
+    font-size: 24px;
+    padding-left: 1px;
+}
+.Follow-Me {
+    display: flex;
+    justify-content: space-between;
+}
+aside section .Follow-Me i:hover {
+    opacity: 0.6
+}
+/* End Follow Me */
+/* Subscribe */
+aside section .Subscribe p {
+    margin-bottom: 10px
+}
+aside section .Subscribe {
+    padding: 15px
+}
+aside section .Subscribe form input,
+aside section .Subscribe button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+aside section .Subscribe button {
+    background: #f44336;
+    color: #fff;
+    border-style: hidden;
+    cursor: pointer
+}
+aside section .Subscribe button:hover {
+    background: #F1F1F1;
+    color: #000;
+}
+/* footer */
+footer {
+    height: auto;
+    text-align: center;
+    background-color: #616161;
+    padding: 50px;
+    font-size: 16px;
+    font-family: "Open Sans";
+    clear: both;
+}
+footer a {
+    text-decoration: none;
+}
+footer .top {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 50px;
+}
+footer p {
+    padding-top: 40px;
+    color: #fff;
+}
