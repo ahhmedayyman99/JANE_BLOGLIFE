@@ -193,8 +193,8 @@ header span {
 }
 .post .info .george {
     border-top: 1px solid #afafaf;
-    margin-top: 50px;
-    padding-top: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
     overflow: hidden;
 }
 .post .info .george .content {
@@ -226,6 +226,25 @@ header span {
     }
     .lire {
         padding-bottom: 50px;
+    }
+    .content p {
+        font-size: 15px;
+        font-weight: 400px;
+        margin: 10px 0;
+    }
+    .content p span {
+        font-size:10px;
+        opacity: 0.60;
+    }
+    .content .Great {
+        text-align: justify;
+        font-family: "Open Sans";
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    .post .info .george img {
+        width: 90px; 
+        margin-right: 50px;
     }
 }
 /* Aside */
